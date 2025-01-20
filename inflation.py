@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # export the cpi data as a pd.DataFrame
 def get_cpi_data(start_year=1913, end_year=2024):
-    df = pd.read_excel("cpi_inflation_data.xlsx")
+    df = pd.read_excel("assets/cpi_inflation_data.xlsx")
     df = df[(df["Year"] >= start_year) & (df["Year"] <= end_year)]
     return df
 
